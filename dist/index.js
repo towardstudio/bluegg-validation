@@ -5,8 +5,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = function () {
-	console.log('Hello, we\'re Bluegg!');
+	$('form[data-validate]').parsley({
+		errorClass: 'form__row--error',
+		successClass: 'form__row--success',
+		errorsWrapper: '<ul class="form__errors"></ul>',
+		errorTemplate: '<li class="form__errors-item"></li>',
+		classHandler: function classHandler(ParsleyField) {
+			return ParsleyField.$element.parent();
+		}
+	});
 };
 
-module.exports = exports['default']; // Write your ES6 module here
+var $ = require('jquery');
+require('parsleyjs');
+
+module.exports = exports['default'];
 
