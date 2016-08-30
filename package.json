@@ -1,7 +1,7 @@
 {
-  "name": "bluegg-module-boilerplate",
+  "name": "bluegg-validation",
   "version": "0.0.1",
-  "description": "Boilerplate for making NPM ready modules using ES2015 syntax",
+  "description": "Basic validation set up using Parlsey JS",
   "main": "dist/index.js",
   "scripts": {
     "build": "node_modules/.bin/babel --plugins add-module-exports src/index.js > dist/index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bluegg/bluegg-module-boilerplate.git"
+    "url": "git+https://github.com/Bluegg/bluegg-validation.git"
   },
   "author": "bluegg",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Bluegg/bluegg-module-boilerplate/issues"
+    "url": "https://github.com/Bluegg/bluegg-validation/issues"
   },
-  "homepage": "https://github.com/Bluegg/bluegg-module-boilerplate#readme",
+  "homepage": "https://github.com/Bluegg/bluegg-validation#readme",
   "devDependencies": {
     "babel-cli": "^6.10.1",
     "babel-plugin-add-module-exports": "^0.1.2",

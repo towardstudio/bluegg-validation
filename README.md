@@ -1,29 +1,28 @@
-# Bluegg Module Boilerplate
+# Bluegg Validation
 
-This is a boilerplate to create NPM compatible modules using ES2015
+Sets up Parlsey JS validation just how we like it
 
-Get started by forking this and changing the name/origin or whatever.
+1. Install
 ```shell
-npm install
+npm install bluegg-validation
 ```
 
-Write your module. Then:
+2. Import and run module
+```js
+var validation = require('bluegg-validation');
 
-```shell
-npm run build
-# Then...
-npm link
+validation();
 ```
 
-Check it works by running
-```shell
-npm link modulename
-```
-(this is like NPM installing but from your computer)
+3. add data attribute to forms you want validated
+```html
 
-Once your happy, write up a readme explaining how to install, create a demo (maybe on [codepen](http://codepen.io)?). Give credit to whoever inspired it.
+<form data-validate>
 
-Check it into Github (or wherever) and then publish to NPM
-```shell
-npm publish
+<!-- Awesome Form Stuff™ goes here -->
+
+</form>
+
 ```
+
+4. 🍸
