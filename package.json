@@ -1,6 +1,6 @@
 {
 	"name": "bluegg-validation",
-	"version": "1.1.1",
+	"version": "1.1.2",
 	"description": "Simple form validation, using HTML5 shaped cowpaths",
 	"main": "dist/index.js",
 	"scripts": {

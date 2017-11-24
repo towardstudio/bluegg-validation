@@ -42,7 +42,7 @@ var validation = new Validation({
 
 ### HTML Usage & Tips
 
-Please first make a nice accessible and semantic form. If you just want the
+Please first make a nice accessible and semantic form. If you only want the
 default functionality, you can simply add a `data-validate` attribute to your
 form element and off you go:
 
@@ -80,7 +80,7 @@ attribute has been changed.
 #### pattern
 
 A regular expression that the control's value is checked against. The pattern
-must match the entire value, not just some subset. Use the title attribute to
+must match the entire value, not only some subset. Use the title attribute to
 describe the pattern to help the user. This attribute applies when the value of
 the type attribute is text, search, tel, url, email, or password, otherwise it
 is ignored. The regular expression language is the same as JavaScript RegExp
@@ -161,8 +161,8 @@ Type: `boolean` Default: `true`
 By default your form fields will be marked invalid as soon as you remove focus.
 It will also re-validate on keyup, if the field has been marked invalid. This
 makes your form look a bit slicker as as soon as the user makes it invalid or
-correct the UI will update automatically. If you want to remove this, just pass
-in `false` for this option
+correct the UI will update automatically. If you want to remove this, pass in
+`false` for this option
 
 ### Examples
 
