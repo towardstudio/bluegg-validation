@@ -19,6 +19,9 @@ class Validation {
 		this.validityError = this.validityError.bind(this);
 
 		this.fields = this.form.querySelectorAll('input, select, textarea');
+		this.changeFields = this.form.querySelectorAll(
+			'input[type="checkbox"], input[type="radio"], select'
+		);
 
 		this.init();
 	}
@@ -61,6 +64,11 @@ class Validation {
 		this.fields.forEach(input => {
 			// Check all fields are valid
 			input.addEventListener('invalid', this.validateField, false);
+		});
+
+		this.changeFields.forEach(input => {
+			// Check all fields are valid
+			input.addEventListener('change', this.validateField, false);
 		});
 
 		// We want inline live validation
